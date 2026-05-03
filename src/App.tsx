@@ -12,7 +12,7 @@ const ProfileCard: React.FC = () => {
       />
       <h2>Thomas Miller</h2>
       <p><strong>Edad:</strong> 21 años</p>
-      <p><strong>Semestre:</strong> 6to Semestre</p>
+      <p><strong>Semestre:</strong> 8to Semestre</p>
       <p><strong>Descripción:</strong> Estudiante apasionado por React.</p>
       <button className="card-btn">Guardar</button>
     </div>
@@ -23,7 +23,6 @@ const ProfileCard: React.FC = () => {
 const App: React.FC = () => {
   return (
     <div className="app-container">
-      <ProfileCard />
       <ProfileCard />
     </div>
   );
