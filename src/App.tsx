@@ -1,9 +1,13 @@
 import React from "react";
+import { Card } from "./assets/components/Card/Card";
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello, World!</h1>
+      <h2>Welcome to the Card App</h2>
+      <Card title="Card Title" description="This is a description of the card." />
+      <Card title="Another Card" description="This is another card with a different description." />
+      <Card title="Third Card" description="This is the third card with yet another description." />
     </div>
   );
 };
