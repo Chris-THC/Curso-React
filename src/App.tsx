@@ -1,10 +1,13 @@
-import React from "react";
+import { ComponentA } from "./components/ComponentA";
+import { ComponentB } from "./components/ComponentB";
+import { ContextAppProvider } from "./context/ContextAppProvider";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    <ContextAppProvider>
+      <ComponentA />
+      <ComponentB />
+    </ContextAppProvider>
   );
 };
 
