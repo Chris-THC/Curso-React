@@ -1,9 +1,11 @@
 import React from "react";
+// import Counter from "./components/Counter";
+import InputExample from "./components/InputExample";
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello, World!</h1>
+      <InputExample />
     </div>
   );
 };
