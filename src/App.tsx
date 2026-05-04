@@ -6,16 +6,23 @@ import { ResetComponent } from "./Reset/ResetComponent";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h2>Count by Zustand</h2>
+    <div
+      style={{
+        maxWidth: "400px",
+        margin: "50px auto",
+        fontFamily: "Arial, sans-serif",
+        textAlign: "center",
+      }}
+    >
+      <h2 style={{ marginBottom: "20px" }}>Count by Zustand</h2>
+
       <ComponentA />
       <ComponentB />
-      <br />
-      <DecrementComponent />
-      <br />
-      <br />
-      <br />
-      <ResetComponent />
+
+      <div style={{ marginTop: "15px" }}>
+        <DecrementComponent />
+        <ResetComponent />
+      </div>
     </div>
   );
 };
