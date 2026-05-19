@@ -2,14 +2,15 @@ import React from "react";
 import "./App.css";
 //Forma de importar una imagen en React (usando import)
 // import imgUser from "./assets/user.jpg";
+import img from "./assets/hero.png"
 
 // Componente de la tarjeta (sin props, datos hardcodeados)
 const ProfileCard: React.FC = () => {
   return (
     <div className="card">
       <img
-        //src={imgUser}
-        src="https://randomuser.me/api/portraits/men/88.jpg"
+        src={img}
+        // src="https://randomuser.me/api/portraits/men/88.jpg"
         alt="Perfil"
         className="card-img"
       />
