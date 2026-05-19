@@ -1,0 +1,28 @@
+.mi-tabla {
+  border-collapse: collapse; /* Une los bordes de las celdas */
+  width: 100%;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mi-tabla thead tr {
+  background-color: #009879; /* Color sÃ³lido para la cabecera */
+  color: #ffffff;
+  text-align: left;
+}
+
+.mi-tabla th,
+.mi-tabla td {
+  padding: 12px 15px; /* Espaciado interno para que el texto no toque bordes */
+}
+
+/* Efecto Cebra: Filas pares con fondo gris claro */
+.mi-tabla tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Resaltado al pasar el ratÃ³n (Hover) */
+.mi-tabla tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
