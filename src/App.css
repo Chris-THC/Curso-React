@@ -1,0 +1,65 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Contenedor que limita el ancho máximo */
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* Flexbox para el encabezado */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #2d3436;
+  color: white;
+}
+
+/* Bloque Héroe con centrado */
+.hero-section {
+  background: #6c5ce7;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Cuadrícula de tarjetas con CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Estilo de los Divs individuales (Cards) */
+.card {
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Pie de página */
+.footer-bar {
+  background: #dfe6e9;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
