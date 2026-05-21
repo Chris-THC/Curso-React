@@ -5,14 +5,13 @@ import { FooterBar } from "./components/footer/FooterBar";
 import { Card } from "./components/card/Card";
 import "./App.css";
 
-type Card = {
+interface Card {
   icon: string;
   title: string;
   description: string;
-};
+}
 
 const App: React.FC = () => {
-
   const cardsData: Card[] = [
     {
       icon: "🚀",
@@ -53,7 +52,7 @@ const App: React.FC = () => {
       icon: "💡",
       title: "Innovador",
       description: "Soluciones creativas para problemas comunes.",
-    }
+    },
   ];
 
   return (
@@ -63,7 +62,7 @@ const App: React.FC = () => {
       <div className="grid-container">
         {cardsData.map((card, index) => {
           return (
-            <Card key={index} icon={card.icon} title={card.title} description={card.description}/>
+            <Card key={index} icon={card.icon} title={card.title} description={card.description} />
           );
         })}
       </div>
