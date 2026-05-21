@@ -5,8 +5,15 @@ import { FooterBar } from "./components/footer/FooterBar";
 import { Card } from "./components/card/Card";
 import "./App.css";
 
+type Card = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
 const App: React.FC = () => {
-  const cardsData = [
+
+  const cardsData: Card[] = [
     {
       icon: "🚀",
       title: "Rapidez",
